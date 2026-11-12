@@ -1,8 +1,8 @@
 def drow_board(spots):
 
-    bourd = (f"|{spots[1]}|{spots[2]}|{spots[3]}\n"
-            f"|{spots[4]}|{spots[5]}|{spots[6]}\n"
-            f"|{spots[7]}|{spots[8]}|{spots[9]}"
+    bourd = (f"|{spots[1]}|{spots[2]}|{spots[3]}|\n"
+            f"|{spots[4]}|{spots[5]}|{spots[6]}|\n"
+            f"|{spots[7]}|{spots[8]}|{spots[9]}|"
              )
     print(bourd)
 
@@ -10,7 +10,7 @@ def drow_board(spots):
 def check_turn(turn):
        if turn % 2 == 0: return "o"
        else: return "x"
-def chuck_winner(spots):
+def check_winner(spots):
     if (spots[1] == spots[2] == spots[3] )\
          or(spots[4] == spots[5] == spots[6] ) \
          or (spots[7] == spots[8] == spots[9]):
